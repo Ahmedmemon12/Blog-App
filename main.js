@@ -12,3 +12,16 @@ RegisterOpt.addEventListener('click',()=>{
 loginDiv.style.display = 'none'
 SignUpDiv.style.display = 'flex'
 })
+
+function togglePasswordVisibility(inputId) {
+    var passwordInput = document.getElementById(inputId);
+    var passwordButton = document.querySelector(`#${inputId} + .showPasswordBtn`);
+  
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      passwordButton.textContent = "Hide";
+    } else {
+      passwordInput.type = "password";
+      passwordButton.textContent = "Show";
+    }
+  }

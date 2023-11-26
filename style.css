@@ -179,6 +179,32 @@ input[type="submit"]:active
   opacity: 0.6;
   transform: scale(0.97);
 }
+/* Add these styles for the Show Password button */
+.signin .content .form .inputBox button.showPasswordBtn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #333;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 0.8em;
+  border-radius: 4px;
+}
+
+.signin .content .form .inputBox button.showPasswordBtn:hover {
+  background: #bb4430;
+}
+
+/* Adjust the position for smaller screens if needed */
+@media (max-width: 600px) {
+  .signin .content .form .inputBox button.showPasswordBtn {
+    right: 5px;
+  }
+}
+
 @media (max-width: 900px)
 {
   section span 
